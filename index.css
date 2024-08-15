@@ -1,0 +1,62 @@
+.button {
+	background-color: #775140;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 15px; /* Arrondi des coins du rectangle */
+	
+}
+  div {
+	margin-left:50%;
+	
+  }
+  .title-gradient {
+    
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Dégradé */
+    -webkit-background-clip: text; /* Clip le fond pour le texte */
+    color: transparent; /* Masque la couleur de texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre portée */
+}
+.title-border {
+   
+    color: rgb(152, 20, 20);
+    position: relative;
+    padding: 20px;
+}
+body {
+    background-image: url('/back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.button:hover {
+    animation: blink 1s infinite; /* Animation de clignotement */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+.title-border {
+    font-size: 2.5rem; /* Taille du texte */
+    font-family: 'Arial', sans-serif; /* Police du texte */
+    font-weight: bold; /* Texte en gras */
+    color: #982B1C; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
+    position: relative; /* Nécessaire pour positionner la bordure */
+    padding: 30px; /* Espacement interne */
+    margin: 30px 0; /* Espacement externe */
+    display: inline-block; /* Évite que le titre occupe toute la largeur */
+}
+
