@@ -1,62 +1,85 @@
+/* Style des boutons */
 .button {
-	background-color: #775140;
-    border: none;
-    color: white;
-    padding: 15px 32px;
+    background-color: #4C3A32; /* Couleur de fond élégante */
+    border: 2px solid #8C7563; /* Bordure subtile */
+    color: white; /* Couleur du texte */
+    padding: 12px 28px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 2px 2px;
+    font-size: 18px;
+    margin: 10px 5px;
     cursor: pointer;
-    border-radius: 15px; /* Arrondi des coins du rectangle */
-	
-}
-  div {
-	margin-left:50%;
-	
-  }
-  .title-gradient {
-    
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Dégradé */
-    -webkit-background-clip: text; /* Clip le fond pour le texte */
-    color: transparent; /* Masque la couleur de texte */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre portée */
-}
-.title-border {
-   
-    color: rgb(152, 20, 20);
-    position: relative;
-    padding: 20px;
-}
-body {
-    background-image: url('/back.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+    border-radius: 30px; /* Bordures plus arrondies */
+    transition: all 0.3s ease; /* Transition douce */
 }
 
-
+/* Animation au survol des boutons */
 .button:hover {
-    animation: blink 1s infinite; /* Animation de clignotement */
+    background-color: #8C7563; /* Changement de couleur au survol */
+    color: #4C3A32; /* Inversion des couleurs au survol */
+    transform: translateY(-3px); /* Légère élévation au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre portée au survol */
 }
 
-@keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
+/* Conteneur de centrage */
+div {
+    margin-left: 50%;
+    transform: translateX(-50%); /* Centre le contenu horizontalement */
+    text-align: center; /* Centre le texte */
 }
+
+/* Titre avec bordure, ombre, et dégradé */
 .title-border {
-    font-size: 2.5rem; /* Taille du texte */
-    font-family: 'Arial', sans-serif; /* Police du texte */
+    font-size: 3rem; /* Taille du texte */
+    font-family: 'Roboto', sans-serif; /* Police moderne */
     font-weight: bold; /* Texte en gras */
-    color: #982B1C; /* Couleur du texte */
+    color: #54382D; /* Couleur du texte */
     text-align: center; /* Centrer le texte */
-    position: relative; /* Nécessaire pour positionner la bordure */
-    padding: 30px; /* Espacement interne */
-    margin: 30px 0; /* Espacement externe */
+    position: relative;
+    padding: 20px 40px; /* Espacement interne */
+    margin: 40px 0; /* Espacement externe */
     display: inline-block; /* Évite que le titre occupe toute la largeur */
+    border: 5px solid #8C7563; /* Bordure autour du texte */
+    border-radius: 20px; /* Coins arrondis */
+    background: linear-gradient(to right, #ffe3e3, #f6c3c3); /* Dégradé doux */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ombre portée élégante */
 }
 
+/* Style du corps de la page */
+body {
+    background-image: url('/back.jpg'); /* Image de fond */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif; /* Police par défaut */
+    color: #333; /* Couleur du texte par défaut */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style pour les éléments de contenu */
+.element {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc légèrement transparent */
+    color: #54382D; /* Couleur du texte */
+    padding: 25px;
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Ombre portée subtile */
+    margin-bottom: 30px; /* Espace en bas */
+    max-width: 800px; /* Largeur maximale */
+    width: 90%;
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style des liens */
+a {
+    color: #8C7563; /* Couleur des liens */
+    text-decoration: none; /* Supprime la décoration des liens */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4C3A32; /* Couleur des liens au survol */
+}
